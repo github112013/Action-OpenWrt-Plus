@@ -19,8 +19,8 @@ on:
       - 'config/project/*.config'
 #  schedule:
 #    - cron: 0 8 * * 5
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/project-openwrt/openwrt
@@ -28,7 +28,7 @@ env:
   CONFIG_FILE: config/project/*.config
   DIY_SH: scripts/project-openwrt.sh
   FEEDS_CONF: feeds.conf.default
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
   KMODS_IN_FIRMWARE: false
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
